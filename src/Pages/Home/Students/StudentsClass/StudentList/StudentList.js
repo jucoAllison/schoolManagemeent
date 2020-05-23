@@ -17,7 +17,6 @@ const StudentList = props => {
   const details = (_id, full_name, sex, e) => {
     setId([{ _id, full_name, sex }]);
     setShowDetials(true);
-    props.ChangedClassToFlase();
   };
 
   React.useEffect(_ => {
