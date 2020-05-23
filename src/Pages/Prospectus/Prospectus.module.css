@@ -1,0 +1,21 @@
+
+.Prospectus{
+  background-color: aliceblue;
+}
+
+.ChangePros h4 {
+  width: 600px;
+  max-width: 70%;
+  border-radius: 6px;
+  box-shadow: 0 0.4px 4px #76848d;
+  font-weight: 11px;
+  background-color: #76848d;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  margin: 40px auto 0px auto;
+  padding: 0.6em;
+}
+.ChangePros h4:hover {
+  box-shadow: 0 0.4px 20px #76848d;
+}

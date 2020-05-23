@@ -1,0 +1,40 @@
+.DisplayGrid2fr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 10px;
+}
+.inputt {
+  margin-right: 10px;
+  background-color: #585757;
+  width: 30px;
+  border: 1px solid #383636;
+  height: 15px;
+  position: relative;
+  outline: none;
+  transition: 0.5s;
+  border-radius: 4px;
+  -webkit-appearance: none;
+}
+
+.inputt:checked {
+  background-color: #ca2929;
+  border: 1px solid #610000;
+}
+
+.inputt::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  background-color: #3a3636;
+  width: 20px;
+  outline: none;
+  transition: 0.5s;
+  height: 23px;
+  border-radius: 30%;
+  margin-top: -5px;
+}
+
+.inputt:checked::before {
+  left: 15px;
+  background-color: #e72626;
+}

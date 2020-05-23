@@ -1,0 +1,36 @@
+.inputt {
+  margin-right: 10px;
+  background-color: #585757;
+  width: 27px;
+  border: 1px solid #383636;
+  height: 12px;
+  position: relative;
+  outline: none;
+  transition: 0.5s;
+  border-radius: 4px;
+  text-transform: capitalize;
+  -webkit-appearance: none;
+}
+
+.inputt:checked {
+  background-color: #ca2929;
+  border: 1px solid #610000;
+}
+
+.inputt::before {
+  content: "";
+  position: absolute;
+  left: -3px;
+  background-color: #3a3636;
+  width: 16px;
+  outline: none;
+  transition: 0.5s;
+  height: 19px;
+  border-radius: 30%;
+  margin-top: -5px;
+}
+
+.inputt:checked::before {
+  left: 10px;
+  background-color: #e72626;
+}

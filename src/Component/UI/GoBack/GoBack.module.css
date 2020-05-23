@@ -1,0 +1,16 @@
+.Goback {
+  width: 50px;
+  padding: .5px;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 40px;
+  color: #e72626;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+@media (max-width: 400px) {
+  .Goback {
+    margin-left: 20px;
+  }
+}

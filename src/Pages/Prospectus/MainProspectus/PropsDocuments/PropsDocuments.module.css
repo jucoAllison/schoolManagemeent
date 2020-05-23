@@ -1,0 +1,54 @@
+.SUB {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.SUB div input {
+  width: 60px;
+}
+.PropsDocuments {
+  width: 100%;
+  margin: 20px auto 0 auto;
+}
+.PropsDocuments h5 {
+  text-align: center;
+  padding-top: 50px;
+  color: #e72626 !important;
+}
+.Seperate {
+  color: #e72626;
+}
+.promptStyle {
+  width: 80%;
+  margin: auto;
+  background-color: #e72626;
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 0.9em;
+}
+.Flex {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.Grid2 {
+  background-color: #fff;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+.message {
+  background-color: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+@media (max-width: 573px) {
+  .Grid2 {
+    grid-template-columns: 1fr;
+    justify-items: left;
+  }
+}

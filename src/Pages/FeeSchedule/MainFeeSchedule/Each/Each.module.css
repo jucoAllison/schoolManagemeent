@@ -1,0 +1,27 @@
+.SUB {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.SUB div input {
+  width: 60px;
+  /* background-color:  */
+}
+.Props {
+  background-color: #fff;
+  margin: 20px auto 0 auto;
+}
+.Props form button {
+  padding: 0.3em;
+  color: #fff;
+  background-color: #76848d;
+  /* outline: none; */
+  border: none;
+}
+
+.message {
+  background-color: inherit;
+  font-weight: bold;
+  text-align: center;
+}

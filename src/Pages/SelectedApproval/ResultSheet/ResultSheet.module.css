@@ -1,0 +1,21 @@
+.ResultSheet{
+    box-shadow: 0 .4px 4px #76848d;
+    width: 600px;
+    overflow: hidden;
+    max-width: 100%;
+    margin: auto;
+    padding: 1.4em;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.ResultSheet:hover{
+    box-shadow: 0 .4px 10px #76848d;
+}
+.message {
+    background-color: inherit;
+    font-weight: bold;
+    text-align: center;
+  }
+  

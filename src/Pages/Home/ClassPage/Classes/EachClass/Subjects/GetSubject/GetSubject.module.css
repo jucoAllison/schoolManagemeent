@@ -1,0 +1,46 @@
+.GetSubject {
+  color: #e72626;
+  padding: 1em;
+  font-size: 14px;
+  background-color: #fff;
+  font-weight: bold;
+}
+.Subject {
+  color: #76848d;
+  display: grid;
+  background-color: #fff;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.AddSubject {
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #fff;
+}
+.Flex {
+  display: flex;
+  color: #e72626;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.message {
+  background-color: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+@media (max-width: 750px) {
+  .Subject {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media(max-width: 450px){
+  .Subject{
+    grid-template-columns: 1fr;
+  }
+}

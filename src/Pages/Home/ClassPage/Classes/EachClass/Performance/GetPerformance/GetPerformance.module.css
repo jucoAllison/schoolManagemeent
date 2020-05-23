@@ -1,0 +1,42 @@
+.GetPerformance {
+  color: #e72626;
+  padding: 1em;
+  font-size: 14px;
+  font-weight: bold;
+}
+.Performance {
+  color: #76848d;
+  display: grid;
+  background-color: #fff;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.AddPerformance {
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.Flex {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.message {
+  background-color: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .Performance {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media(max-width: 550px){
+  .Performance{
+    grid-template-columns: 1fr;
+  }
+}

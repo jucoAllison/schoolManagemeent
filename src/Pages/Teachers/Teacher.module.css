@@ -1,0 +1,26 @@
+.Teacher {
+  width: 700px;
+  background-color: #ffffff;
+  margin: 30px auto;
+  box-shadow: 0 0.4px 4px #76848d;
+  padding: 1em;
+  max-width: 90%;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.Teacher:hover {
+  box-shadow: 0 0.4px 10px #76848d;
+}
+.Flex {
+  display: flex;
+  justify-content: space-between;
+  color: #76848d;
+  background-color: #ffffff;
+}
+.Flex div {
+  background-color: #ffffff;
+}
+.pageDiscription {
+  text-align: center;
+  margin: 40px 0px;
+}

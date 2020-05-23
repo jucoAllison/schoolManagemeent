@@ -1,0 +1,28 @@
+.Student{
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.mainStudents{
+    background-color: #454f51;
+    color: #fff;
+    /* display: f */
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin: 1em auto;
+    box-sizing: border-box;
+    padding: .7em;
+    width: 300px;
+}
+.speciallink{
+    padding: 0px 10px;
+}
+.Grid{
+    background-color: #fff;
+    margin: 1em;
+}
+.message{
+    background-color: inherit;
+    font-weight: bold;
+    text-align: center;
+  }

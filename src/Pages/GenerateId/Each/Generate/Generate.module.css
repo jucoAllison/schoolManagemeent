@@ -1,0 +1,36 @@
+.Generate {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.5fr;
+  justify-content: center;
+  box-sizing: border-box;
+  grid-gap: 10px;
+}
+.Generate div {
+  margin: 10px 4px;
+  font-weight: bold;
+  font-size: 14.4px;
+  padding: 8px;
+}
+.UserName {
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+.Password {
+  /* padding: 10px; */
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+.buttonChange {
+  cursor: pointer;
+  background-color: inherit;
+  box-sizing: border-box;
+  color: #e72626;
+  border: 1px solid #e72626;
+  width: 70px;
+  text-align: center;
+}
+.buttonChange:hover {
+  background-color: #e72626 !important;
+  color: #fff;
+  border: 1px solid #e72626;
+}

@@ -1,0 +1,11 @@
+.AddTeacher{
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    background-color: #ffffff;
+    color: #e72626;
+}
+.Scrool{
+    height: 500px;
+    overflow: scroll;
+}

@@ -1,0 +1,68 @@
+.Aprove{
+    width: 700px;
+    max-width: 80%;
+    background-color: #ffffff;
+    padding: 1em;
+    margin: 30px auto 30px auto;
+    border-radius: 7px;
+    box-shadow: 0 .4px 4px #76848d;
+}
+.Aprove:hover{
+    box-shadow: 0 .4px 10px #76848d;
+}
+.Aprove h5{
+    background-color: #ffffff;
+    text-align: center;
+}
+.isSorting{
+    display: flex;
+}
+.Sorting{
+    background-color: #ffffff;
+}
+.cover{
+    display:flex;
+    justify-content: space-between;    
+    background-color: inherit;
+    visibility: hidden,
+    visible
+
+}
+.cover div {
+    background-color: inherit;
+}
+.ApprovedTrue{
+    color: green;
+    border: 1px solid green;
+    padding: .3em;
+    width: 200px;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    margin: 10px 0px 0px auto;
+}
+.ApprovedFalse{
+    padding: .3em;
+    font-size: 12px;
+    width: 200px;
+    /* margin-right: auto; */
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ffffff;
+    border: 1px solid #e72626;
+    margin: 10px auto 0px 0px;
+    color: #e72626;
+}
+.ApprovedHeaderSection{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;;
+}
+.Message{
+    background-color: #e72626;
+    color: #fff;
+    padding: 1em;
+    margin-top: 10px;
+    font-size: 13px;
+  }

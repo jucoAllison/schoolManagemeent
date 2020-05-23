@@ -1,0 +1,11 @@
+.Loading{
+    text-align: center;
+    padding: .9em;
+    background-color: #fa7342;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #e23f03;
+}

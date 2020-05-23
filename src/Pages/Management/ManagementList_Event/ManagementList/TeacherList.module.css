@@ -1,0 +1,45 @@
+.Student {
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.mainStudents {
+  background-color: #454f51;
+  color: #fff;
+  /* display: f */
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 1em auto;
+  box-sizing: border-box;
+  padding: 0.7em;
+  width: 300px;
+}
+.speciallink {
+  padding: 0px 10px;
+}
+.Grid {
+  background-color: #fff;
+  margin: 1em;
+}
+.message {
+  background-color: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+.NewAdmin {
+  width: 600px;
+  color: #fff;
+  max-width: 70%;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 0.4px 4px #76848d;
+  font-weight: 11px;
+  background-color: #e72626;
+  cursor: pointer;
+  margin: 60px auto 10px auto;
+  padding: 0.6em;
+}
+.NewAdmin:hover {
+  box-shadow: 0 0.4px 20px #76848d;
+}

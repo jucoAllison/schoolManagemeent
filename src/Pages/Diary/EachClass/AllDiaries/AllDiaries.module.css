@@ -1,0 +1,31 @@
+.AllDiaries{
+    background-color: #fff;
+    color: #000;    
+    width: 700px;
+    /* box-shadow: 0 .4px 4px #76848d; */
+    padding: 1em;
+    margin: 20px auto 0 auto;
+    max-width: 69%;
+    border-radius: 13px;
+}
+.AllDiaries:hover{
+    box-shadow: 0 .4px 20px #76848d;
+}
+.SUb{
+    font-size: 15px;
+    background-color: #fff;
+}
+.note{
+    margin: 5px 0 5px 20px;
+    background-color: #fff;
+}
+.download form button{
+    background-color: #e72626;
+    border-radius: 4.3px;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: .4em;
+    margin-top: 20px;
+    font-weight: bold;
+}

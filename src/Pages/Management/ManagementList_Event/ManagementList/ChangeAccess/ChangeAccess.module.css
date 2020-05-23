@@ -1,0 +1,21 @@
+.Delete{
+    margin-bottom: 10px;
+}
+.Delete h4{
+    background-color: #fff;
+    text-align: center;
+}
+.BUTTON{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.BUTTON h5{
+    padding: .8em;
+    background-color: #198dfb;
+    color: #fff;
+    cursor: pointer;
+}
+.BUTTON h5:last-child{
+    background-color: #e72626;
+}

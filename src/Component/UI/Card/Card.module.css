@@ -1,0 +1,29 @@
+.Card{
+    border-radius: 5px;
+    max-width: auto;
+    height: auto;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+    display: block;
+    padding: 1.6em;
+    color: #fff;
+}
+.lowerCard{
+    /* width: 55px; */
+    background-color: inherit;
+    display: block;
+}
+
+.lowerCard span{
+    font-weight: bold;
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    margin: auto 0;
+    font-size: 30px;
+}
+.Card:hover{
+    box-shadow: 3px 2px 40px rgba(0, 0, 0, 0.7);
+}
+.BG{
+    background-color: inherit;
+}

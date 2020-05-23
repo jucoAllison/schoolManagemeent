@@ -1,0 +1,11 @@
+.ChangeProps {
+  width: 500px;
+  max-width: 70%;
+  background-color: #fff;
+  box-shadow: 0 0.4px 4px #76848d;
+  margin: auto;
+  padding: 0.6em;
+}
+.ChangeProps:hover {
+  box-shadow: 0 0.4px 20px #76848d;
+}

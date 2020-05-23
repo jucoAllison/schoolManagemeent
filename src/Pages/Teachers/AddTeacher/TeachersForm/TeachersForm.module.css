@@ -1,0 +1,116 @@
+.FORM{
+  background-color: #fff
+}
+.FORM button{
+  color: #e72626;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.password{
+  text-align: center;
+  color: #e72626;
+  background-color: inherit;
+}
+.TeachersForm{
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.TeachersLogin{
+    background-color: #fff;
+    box-sizing: border-box;
+    border: .5px solid #76848d;
+    padding: 1em;
+    margin-bottom: 9px;
+}
+.TeachersLogin h5{
+    background-color: #fff;
+    text-align: center;
+    color: #76848d;
+}
+.FormControls {
+    box-sizing: border-box;
+    background-color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .FormControls div{
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  .FormControls label {
+    display: block;
+    font-size: 13px;
+    background-color: #fff;
+    font-family: inherit;
+    color: #808c93;
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 90%;
+  }
+  
+  .FormControls input{
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 0.6em 0 0.6em 1.2em;
+    border: 1px solid #76848d;
+    margin-top: 0.2em;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    color: #76848d;
+    outline: none;
+    text-transform: capitalize;
+  }
+
+  .FormControlsSelect{
+    display: block;
+  }
+
+
+  @media(max-width: 810px){
+      .FormControls{
+          flex-direction: column;
+      }
+  }
+
+  .Fullname{
+    box-sizing: border-box;
+    background-color: #fff;
+    font-weight: bold;
+    width: 100%;
+  }
+  .Fullname input {
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 0.6em 0 0.6em 1.2em;
+    border: 1px solid #76848d;
+    margin-top: 0.2em;
+    background-color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: #76848d;
+    outline: none;
+  }
+  .Fullname label {
+    display: block;
+    font-size: 13px;
+    background-color: #fff;
+    font-family: inherit;
+    color: #808c93;
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 90%;
+  }

@@ -1,0 +1,21 @@
+.BgColor {
+    background-color: aliceblue;
+  }
+  .Select{
+      box-shadow: 0 .4px 4px #76848d;
+      max-width: 300px;
+      margin: auto;
+      padding: 1.4em;
+      border-radius: 5px;
+      background-color: #fff;
+      overflow: hidden;
+      margin-bottom: 30px;
+  }
+  .Select:hover{
+      box-shadow: 0 .4px 10px #76848d;
+  }
+  .Select h4{
+      color: #808c93;
+      text-align: center;
+      font-size: 15px;
+  }

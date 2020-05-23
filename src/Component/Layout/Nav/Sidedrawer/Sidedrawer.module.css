@@ -1,0 +1,20 @@
+.Sidedrawer{
+    position: fixed;
+    z-index: 200;
+    top: 43.2px;
+    padding: 1em;
+    right: 0px;
+    box-sizing: border-box;
+    /* background-color:  */
+    background-color: #454f51;
+    width: 210px;
+    height: 100%;
+    transition: all .6s ease-out;
+}
+.Sidedrawer:hover{
+}
+.Link{
+    padding: .4em;
+    border-bottom: .8px solid #71cff5;
+    background-color: inherit;
+}

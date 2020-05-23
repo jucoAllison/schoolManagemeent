@@ -1,0 +1,47 @@
+.Settings{
+  background-color: aliceblue;
+  color: #fff;
+}
+.User{
+    width: 600px;
+    max-width: 70%;
+    border-radius: 6px;
+    box-shadow: 0 .4px 4px #76848d;
+    font-weight: 11px;
+    background-color: #198dfb;
+    cursor: pointer;
+  text-align: center;
+  margin:  0 auto 10px auto;
+    padding: .6em;
+}
+.User:hover{
+    box-shadow: 0 .4px 20px #76848d;
+}
+.Password{
+    width: 600px;
+    max-width: 70%;
+    border-radius: 6px;
+    box-shadow: 0 .4px 4px #76848d;
+    font-weight: 11px;
+  text-align: center;
+  background-color: #76848d;
+    cursor: pointer;
+    margin:  20px auto 0px auto;
+    padding: .6em;
+}
+.Password:hover{
+    box-shadow: 0 .4px 20px #76848d;
+}
+
+.Year{
+  width: 600px;
+  max-width: 70%;
+  border-radius: 6px;
+  box-shadow: 0 .4px 4px #76848d;
+  font-weight: 11px;
+  background-color: #76848d;
+  cursor: pointer;
+text-align: center;
+margin:  0 auto 15px auto;
+  padding: .6em;
+}

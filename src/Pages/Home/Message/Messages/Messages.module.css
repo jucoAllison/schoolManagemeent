@@ -1,0 +1,40 @@
+.BgColor {
+  background-color: aliceblue;
+}
+.carrier {
+  box-shadow: 0 0.4px 4px #76848d;
+  max-width: 500px;
+  margin: auto;
+  padding: 1.4em;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.carrier:hover {
+  box-shadow: 0 0.4px 10px #76848d;
+}
+.eachMessage {
+  overflow: hidden;
+  height: 20px;
+  font-size: 13.79px;
+  width: 80%;
+  background-color: #fff;
+  margin: 0.8em;
+  transition: 1s ease-out;
+  cursor: pointer;
+  padding: 0.4em;
+}
+.Flex {
+  display: flex;
+  background-color: #fff;
+}
+.Flex span {
+  color: #76848d;
+  background-color: #fff;
+  margin: 1.2em;
+}
+.message {
+  background-color: inherit;
+  font-weight: bold;
+  text-align: center;
+}

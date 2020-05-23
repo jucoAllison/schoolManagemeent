@@ -1,0 +1,195 @@
+.Contain {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: inherit;
+  margin-top: 20px;
+  /* flex: .4 1; */
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  flex: 0% 1%;
+}
+.Label {
+  font-size: 13px;
+  color: #000;
+  margin-right: 10px;
+  background-color: inherit;
+}
+.Value {
+  background-color: inherit;
+  border-bottom: 1px solid #000;
+  padding: 0px 0.6em;
+  text-transform: uppercase;
+  font-size: 13px;
+  /* width: 70%; */
+}
+.must_fill{
+  box-sizing: border-box;
+  border: 1px solid #e72626;
+  background-color: inherit;
+  padding: 1em;
+  margin-top: 20px
+}
+
+.FLEX {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: inherit;
+  grid-gap: 10px;
+}
+
+/* // comment section */
+
+.Form {
+  text-align: left;
+  font-size: 13.8px
+}
+.CommentText {
+  margin-top: 10px;
+}
+.CommentText textarea {
+  padding: 0.5em;
+  background-color: #ffffff;
+  width: 100%;
+  border: 0.8px solid #000;
+  box-sizing: border-box;
+}
+
+/* SUBJECT SESSION */
+.GridingSub {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  margin: 0px 0px 5px 0px;
+  padding-bottom: .4em;
+  padding-top: 14px;
+  border-bottom: 1px solid #000
+}
+.GridingSub input {
+  width: 50px;
+}
+.inputName{
+    display: none;
+    background-color: #fff;
+}
+.mainSubject{
+    display: grid;
+    background-color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.Scores{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    background-color: #fff
+}
+.Scores h5{
+  background-color: #fff;
+  font-size: 11px;
+}
+
+
+/* PERFORMANCE SESSION */
+.Carrier {
+  padding-top: 10px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 11px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+.Rate {
+  width: 150px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between !important;
+  box-sizing: border-box;
+}
+.inpuut div {
+  background-color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  margin-left: 28px;
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  width: 20px;
+  border-bottom: 2px solid #000;
+}
+.FlexT {
+  display: grid;
+  background-color: #ffffff;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+  margin-top: 10px;
+  justify-items: center;
+  /* justify-content: center; */
+}
+
+/* NO OF TIMES */
+.Flexx {
+  background-color: #ffffff;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.present {
+  /* width: 70%; */
+  margin: 0px auto 20px auto;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+.presentCarrier {
+  font-size: 13px;
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+.Flexx h5 {
+  background-color: #ffffff;
+  border-bottom: 2px solid #000;
+  text-transform: uppercase;
+  margin-left: 10px;
+  box-sizing: border-box;
+  padding-left: 7px;
+  /* text-align: center; */
+  outline: none;
+  width: 50px;
+}
+@media (max-width: 600px) {
+  .NoScrool {
+    width: 400px;
+  }
+  .FLEX {
+    grid-template-columns: 1fr;
+  }
+  .FlexT {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+
+
+
+@media (max-width: 850px) {
+  .GridingSub{
+      flex-direction: column;
+  }
+.inputName{
+  display: block;
+}
+.mainSubject{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  /* margin: 15px 0px 5px 0px; */
+}
+}
+@media (max-width: 602px){
+.Scores{
+  grid-template-columns: 1fr 1fr;
+}
+/* .Scores h5{
+position: absolute;
+left: 50px;
+} */
+}

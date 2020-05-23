@@ -1,0 +1,50 @@
+.MessageCont {
+  width: 700px;
+  max-width: 70%;
+  box-shadow: 0 0.4px 4px #76848d;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 300px;
+  box-sizing: border-box;
+}
+.MessageCont:hover {
+  box-shadow: 0 0.4px 10px #76848d;
+}
+
+.flex{
+  background-color: inherit;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.flex h5{
+    background-color: inherit;
+    padding: 5px 0px
+}
+
+.flex button{
+  border: none;
+  background-color: #e72626;
+  color: #fff;
+  padding: .5em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.MessageCont textarea {
+    background-color: inherit;
+    padding: 1em;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.message {
+  background-color: inherit;
+  font-weight: bold;
+  text-align: center;
+}

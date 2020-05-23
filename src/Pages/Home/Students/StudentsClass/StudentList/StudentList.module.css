@@ -1,0 +1,78 @@
+.BgColor {
+  background-color: aliceblue;
+}
+.Griding {
+  width: 700px;
+  max-width: 89%;
+  background-color: #ffffff;
+  padding: 1em;
+  margin: 30px auto 30px auto;
+  border-radius: 7px;
+  box-shadow: 0 0.4px 4px #76848d;
+}
+.Griding:hover {
+  box-shadow: 0 0.4px 10px #76848d;
+}
+
+.ApprovedHeaderSection {
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+  margin: 20px 0px 0px 0px;
+}
+
+.inputFilter {
+  border: 1px solid #198dfb;
+  display: block;
+  max-width: 200px;
+  padding: 0.3em;
+  background-color: #fff;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-size: 12px;
+  margin-bottom: 20px;
+  outline: none;
+  color: #76848d;
+}
+.LISTLI {
+  border: 1px solid #198dfb;
+  padding: 0.3em;
+  width: 200px;
+  font-size: 12px;
+  display: flex;
+  background-color: #ffffff;
+  margin: 10px 10px 0px 0px;
+  cursor: pointer;
+  justify-content: flex-start;
+  list-style: none;
+  color: #76848d;
+  font-weight: bold;
+}
+.displyGrid {
+  display: grid;
+  background-color: #fff;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.LISTLI span {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+.message {
+  background-color: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 870px) {
+  .displyGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 530px) {
+  .displyGrid {
+    grid-template-columns: 1fr;
+  }
+}

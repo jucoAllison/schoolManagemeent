@@ -1,0 +1,81 @@
+.Nav {
+  /* padding: 1em; */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  background-color: #e72626;
+  color: #fff;
+  z-index: 300;
+  font-weight: bold;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+.down{
+  padding-bottom: 20px !important;
+  padding-top: 50px !important;
+
+
+}
+.Nav main {
+  position: absolute;
+  user-select: none;
+  cursor: pointer;
+}
+.List {
+  justify-content: flex-end;
+  background-color: #e72626;
+  margin-left: auto;
+}
+.List ul {
+  display: flex;
+}
+.Link {
+  z-index: 300;
+  display: flex;
+  border-bottom: 0.6px solid #e72626;
+  background-color: #e72626;
+  padding: 0.8em 0.8em 0.8em 0.8em;
+}
+.Link:hover {
+  border-bottom: 0.6px solid #fff;
+}
+.Link li {
+  background-color: #e72626;
+  padding-left: 4px;
+  z-index: 2;
+}
+.List ul li {
+  font-size: 14px;
+  background-color: #e72626;
+  list-style: none;
+  cursor: pointer;
+}
+
+/* The Menu */
+.Menu {
+  display: none;
+  z-index: 300;
+  background-color: #e72626;
+}
+
+
+.Dashboard{
+  background-color: #e72626 !important;
+  /* margin-left: 50px;   */
+}
+
+@media (max-width: 800px) {
+  .Menu {
+    display: block;
+    padding: 0.8em 0.8em 0.8em 0.8em;
+  }
+  .List ul {
+    display: none;
+  }
+}
+
+@media (max-width: 370px) {
+  .Nav main {
+      display: none;
+  }
+}

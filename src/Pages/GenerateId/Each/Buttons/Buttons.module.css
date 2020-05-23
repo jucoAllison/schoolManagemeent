@@ -1,0 +1,13 @@
+.form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.form button{
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    padding: 0px .9em;
+}

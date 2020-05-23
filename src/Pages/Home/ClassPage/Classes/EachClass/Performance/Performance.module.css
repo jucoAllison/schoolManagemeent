@@ -1,0 +1,21 @@
+.Performance{
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+.PerformanceCarrier{
+    border: 1px solid #e72626;
+    background-color: #fff;
+}
+
+.Jects{
+    width: 600px;
+    max-width: 70%;
+    border-radius: 6px;
+    font-weight: 11px;
+    background-color: #e72626;
+    margin:  0 auto 10px auto;
+    padding: .6em .6em .6em 12px;
+}
+.Jects h4{
+    background-color: inherit; 
+}

@@ -1,0 +1,28 @@
+.whom {
+  background-color: inherit;
+  color: #e72626;
+  text-align: center;
+}
+.TO {
+  background-color: inherit;
+  text-align: center;
+  margin: 8px 0px;
+}
+.Message {
+  background-color: inherit;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.BTNEvent {
+  background-color: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+.BTNEvent div {
+  padding: 0.4em 0.9em;
+  color: #fff;
+  background-color: #198dfb;
+}
+.BTNEvent div:last-child {
+  background-color: #e72626;
+}

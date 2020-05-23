@@ -1,0 +1,28 @@
+.ClassBorder {
+  padding: 0.7em;
+  background-color: #fff;
+}
+.Class {
+  color: #e72626;
+  background-color: inherit;
+}
+.subject_name {
+  border: 1px solid #e72626;
+  background-color: inherit;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  justify-items: stretch;
+  box-sizing: border-box;
+  padding: 0.6em;
+}
+.MainSubs {
+  background-color: inherit;
+  text-transform: capitalize;
+  font-size: 13.6px;
+}
+@media (max-width: 426px) {
+  .subject_name {
+    grid-template-columns: 1fr;
+  }
+}
