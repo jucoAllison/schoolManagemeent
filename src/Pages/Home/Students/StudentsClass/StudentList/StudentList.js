@@ -8,20 +8,15 @@ import { ReactComponent as Boy } from "../../../../../Assert/students/boy.svg";
 import { ReactComponent as Who } from "../../../../../Assert/students/who.svg";
 import { ReactComponent as Girl } from "../../../../../Assert/students/girl.svg";
 import { ReactComponent as Retry } from "../../../../../Assert/retry.svg";
+import HomeContext from "../../../../../Component/Context/HomeContext";
 
 const StudentList = props => {
-  // PARSing This To the Props
-  const [id, setId] = React.useState([{ _id: "", full_name: "", sex: "" }]);
+  const HomeCTX = React.useContext(HomeContext)
   // this hook shows the details and it is off with React.useEffect
-  const [showDetials, setShowDetials] = React.useState(false);
   const details = (_id, full_name, sex, e) => {
-    setId([{ _id, full_name, sex }]);
-    setShowDetials(true);
+    HomeCTX.setClickedDetails({ _id, full_name, sex })
   };
 
-  React.useEffect(_ => {
-    setShowDetials(false);
-  }, []);
 
   // Value on the FILTER
   const [filter, setFilter] = React.useState("");
@@ -37,14 +32,14 @@ const StudentList = props => {
   }).map(v => {
     return (
       <Link
+      key={v._id}
         to="/get=>_studentFullDetails"
-        style={{ color: "none", textDecoration: "none" }}
+        style={{ color: "none", textDecoration: "none", backgroundColor: "inherit" }}
       >
         <li
           style={{ backgroundColor: "#fff" }}
           onClick={details.bind(this, v._id, v.full_name, v.sex)}
           className={Classes.LISTLI}
-          key={v._id}
         >
           {v.sex == "male" || v.sex == "Male" ? (
             <Boy
@@ -105,17 +100,7 @@ const StudentList = props => {
   return (
     <div className={Classes.BgColor}>
       <div className={Classes.Griding}>
-        {/* {showDetials && (
-          <div className={Classes.Details}>
-            {props.ChangedClass ? null : (
-              <StudentDetails
-                eachId={id}
-                update={props.update}
-                ChangedClassToTrue={props.ChangedClassToTrue}
-              />
-            )}
-          </div>
-        )} */}
+        
         {props.loading ? (
           <Loading />
         ) : (

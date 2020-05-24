@@ -6,7 +6,8 @@ class ForHomeContext extends React.Component {
   state = {
     clickedHandler: { student: false, message: false, class: false },
     selectingClassClasses: null,
-    selectingClassStudents: null
+    selectingClassStudents: null,
+    clickedDetails: null
   };
 
   setClickedHandler = payload => this.setState({ clickedHandler: payload });
@@ -22,6 +23,10 @@ class ForHomeContext extends React.Component {
       }
   }
 
+  setClickedDetails = payload => {
+    this.setState({clickedDetails: { _id: payload._id, full_name: payload.full_name, sex: payload.sex }})
+  }
+
   render() {
     return (
       <HomeContext.Provider
@@ -30,7 +35,9 @@ class ForHomeContext extends React.Component {
           clickedHandler: this.state.clickedHandler,
           selectingClassClasses: this.state.selectingClassClasses,
           selectingClassStudents: this.state.selectingClassStudents,
-          setSelectingClass: this.setSelectingClass
+          setSelectingClass: this.setSelectingClass,
+          clickedDetails: this.state.clickedDetails,
+          setClickedDetails: this.setClickedDetails
         }}
       >
         <Route />

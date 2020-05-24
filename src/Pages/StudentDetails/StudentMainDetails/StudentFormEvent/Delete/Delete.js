@@ -1,7 +1,7 @@
 import React from "react";
 import Classes from "./Delete.module.css";
-import Modal from "../../../../../../../../Component/UI/Modal/Modal";
-import Context from "../../../../../../../../Component/Context/Context";
+import Modal from "../../../../../Component/UI/Modal/Modal";
+import Context from "../../../../../Component/Context/Context";
 
 const Delete = props => {
   const CTX = React.useContext(Context);

@@ -22,7 +22,7 @@
 }
 
 .inputFilter {
-  border: 1px solid #198dfb;
+  border: 1px solid #188dfc;
   display: block;
   max-width: 200px;
   padding: 0.3em;
@@ -32,20 +32,20 @@
   font-size: 12px;
   margin-bottom: 20px;
   outline: none;
-  color: #76848d;
+  color: #757575;
 }
 .LISTLI {
   border: 1px solid #198dfb;
   padding: 0.3em;
   width: 200px;
-  font-size: 12px;
+  font-size: 13px;
   display: flex;
   background-color: #ffffff;
   margin: 10px 10px 0px 0px;
   cursor: pointer;
   justify-content: flex-start;
   list-style: none;
-  color: #76848d;
+  color: #757575;
   font-weight: bold;
 }
 .displyGrid {
@@ -57,7 +57,7 @@
 .LISTLI span {
   display: flex;
   align-items: center;
-  font-size: 13px;
+  font-size: 12.2 px;
 }
 .message {
   background-color: inherit;

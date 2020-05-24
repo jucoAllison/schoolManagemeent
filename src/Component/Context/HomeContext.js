@@ -8,4 +8,7 @@ export default React.createContext({
     selectingClassClasses: null,
     selectingClassStudents: null,
     setSelectingClass: () => {},
+    // clicked student in the selecting class
+    clickedDetails: null,
+    setClickedDetails: () => {},
 })

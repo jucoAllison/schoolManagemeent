@@ -1,11 +1,11 @@
 import React from "react";
 import Classes from "./index.module.css";
-import Loading from "../../../../../../../../Component/UI/Loading/Loading";
+import Loading from "../../../../../Component/UI/Loading/Loading";
 import Graduate from "../Graduate/Index";
 import Delete from "../Delete/Delete";
 import SecondStudentForm from "./SecondStudentForm";
 
-import { ReactComponent as Retry } from "../../../../../../../../Assert/retry.svg";
+import { ReactComponent as Retry } from "../../../../../Assert/retry.svg";
 
 const StudentDetails = props => {
   // for showing graduting component

@@ -17,11 +17,12 @@ const Students = () => {
 
   const GEtAllStudentInThisClass = () => {
     setLoading(true);
+    setMessage(false);
     setErr(false);
     fetch(
       `http://localhost:2222/admin/get_students/${HomeCTX.selectingClassStudents._id}`,
       {
-        method: "PUT",
+        method: "GET",
         headers: new Headers({
           "Content-Type": "application/json",
           Authorization: `Bearer ${CTX.token.token}`
@@ -32,23 +33,33 @@ const Students = () => {
       .then(res => {
         setErr(false);
         setLoading(false);
-        setStudentNames(res.result);
         setTotal(res.total);
         setClassName(res.class_name);
+        if (res.result.length < 1) {
+          setMessage(true);
+          setStudentNames([{ _id: "", full_name: "", sex: "" }]);
+        } else {
+          setMessage(false);
+          setStudentNames(res.result);
+        }
       })
       .catch(err => {
+        setMessage(false);
         setErr(true);
         setLoading(false);
       });
   };
 
-  React.useEffect(_ => {
-      if(HomeCTX.selectingClassStudents === null){
-          return
-      }else{
-          GEtAllStudentInThisClass()
+  React.useEffect(
+    _ => {
+      if (HomeCTX.selectingClassStudents === null) {
+        return;
+      } else {
+        GEtAllStudentInThisClass();
       }
-  },[HomeCTX.selectingClassStudents])
+    },
+    [HomeCTX.selectingClassStudents]
+  );
 
   return (
     <div>
@@ -56,6 +67,7 @@ const Students = () => {
         err={err}
         loading={loading}
         message={message}
+        total={total}
         className={className}
         StudentNames={StudentNames}
       />

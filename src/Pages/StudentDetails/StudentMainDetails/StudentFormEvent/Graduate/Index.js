@@ -1,8 +1,8 @@
 import React from "react";
 import Classes from "./Index.module.css";
-import SelectingClass from "../../../../../../../../Component/UI/SelectingClass/SelectingClass";
-import Modal from "../../../../../../../../Component/UI/Modal/Modal";
-import Context from "../../../../../../../../Component/Context/Context";
+import SelectingClass from "../../../../../Component/UI/SelectingClass/SelectingClass";
+import Modal from "../../../../../Component/UI/Modal/Modal";
+import Context from "../../../../../Component/Context/Context";
 
 const Index = props => {
   const CTX = React.useContext(Context);

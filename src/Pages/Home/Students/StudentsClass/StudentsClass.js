@@ -6,10 +6,8 @@ import HomeContext from "../../../../Component/Context/HomeContext";
 
 const StudentsClass = props => {
   const HomeCTX = React.useContext(HomeContext);
-  const [ChangedClass, setChangedClass] = React.useState(false);
   const setGetClassHandler = (id, name, ok) => {
     HomeCTX.setSelectingClass({ _id: id, selected: name });
-    setChangedClass(true);
   };
   return (
     <div className={Classes.BG}>
@@ -26,7 +24,7 @@ const StudentsClass = props => {
         />
       </div>
 
-      {HomeCTX.clickedHandler.student ? (
+      {HomeCTX.selectingClassStudents === null ? null : (
         <StudentList
           // show={props.show}
           err={props.err}
@@ -36,7 +34,7 @@ const StudentsClass = props => {
           total={props.total}
           StudentNames={props.StudentNames}
         />
-      ) : null}
+      )}
     </div>
   );
 };

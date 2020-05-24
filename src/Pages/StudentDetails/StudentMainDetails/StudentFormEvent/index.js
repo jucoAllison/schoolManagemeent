@@ -1,6 +1,6 @@
 import React from "react";
 import StudentForm from "./StudentForm/index";
-import Context from "../../../../../../../Component/Context/Context";
+import Context from "../../../../Component/Context/Context";
 
 const Index = props => {
   const CTX = React.useContext(Context);
@@ -33,7 +33,7 @@ const Index = props => {
 
   const SEND = () => {
     setLoadingCom(true);
-    fetch(`http://localhost:2222/admin/get_student/${propsMatch[0]._id}`, {
+    fetch(`http://localhost:2222/admin/get_student/${propsMatch}`, {
       method: "PUT",
       headers: new Headers({
         "Content-Type": "application/json",
@@ -62,14 +62,6 @@ const Index = props => {
       .then(res => {
         setLoadingCom(false);
         setChildDetails(res.result);
-        if (
-          propsMatch[0].full_name !== res.result.full_name ||
-          propsMatch[0].sex !== res.result.sex
-        ) {
-          props.update();
-        } else {
-          return;
-        }
       })
       .catch(err => {
         setLoadingCom(false);
@@ -97,7 +89,7 @@ const Index = props => {
   const getEachStudent = () => {
     setErr(false);
     setLoading(true);
-    fetch(`http://localhost:2222/admin/get_student/${propsMatch[0]._id}`, {
+    fetch(`http://localhost:2222/admin/get_student/${propsMatch}`, {
       method: "GET",
       headers: new Headers({
         "Content-Type": "application/json",
@@ -173,7 +165,7 @@ const Index = props => {
     <div>
       <StudentForm
       ChangedClassToTrue={props.ChangedClassToTrue}
-        childID={propsMatch[0]._id}
+        childID={propsMatch}
         update={props.update}
         err={err}
         loading={loading}
