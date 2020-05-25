@@ -1,11 +1,11 @@
 import React from "react";
 import Classes from "./Delete.module.css";
 import Modal from "../../../../../Component/UI/Modal/Modal";
-import Context from "../../../../../Component/Context/Context";
+import HomeContext from "../../../../../Component/Context/HomeContext";
+import { Link } from "react-router-dom";
 
 const Delete = props => {
-  const CTX = React.useContext(Context);
-  const [loading, setLoading] = React.useState(false);
+  const HomeCTX = React.useContext(HomeContext);
   let Capital = (
     <div
       style={{
@@ -18,26 +18,8 @@ const Delete = props => {
     </div>
   );
 
-  const deleteStudent = () => {
-    setLoading(true);
-    fetch(`http://localhost:2222/admin/Delete_this/${props.studentID}`, {
-      method: "DELETE",
-      headers: new Headers({
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${CTX.token.token}`
-      })
-    })
-      .then(res => res.json())
-      .then(res => {
-        setLoading(false);
-        console.log("DELETED");
-        props.ChangedClassToTrue()
-        props.update()
-      })
-      .catch(err => {
-        setLoading(false);
-        alert("Check Your Internet Connection and Continue");
-      });
+  const deleteStudent = (_id, name, e) => {
+    HomeCTX.setDeletingStudent({ _id, name });
   };
 
   return (
@@ -59,7 +41,20 @@ const Delete = props => {
           </div>
           <div className={Classes.BUTTON}>
             <h5 onClick={props.closeShowModal}>No</h5>
-            <h5 onClick={deleteStudent}>{loading ? "..." : "Yes"}</h5>
+            <Link
+              style={{ textDecoration: "none", color: "inherit" }}
+              to="/deleting_students"
+            >
+              <h5
+                onClick={deleteStudent.bind(
+                  this,
+                  props.studentID,
+                  props.full_name
+                )}
+              >
+                Yes
+              </h5>
+            </Link>
           </div>
         </div>
       </Modal>

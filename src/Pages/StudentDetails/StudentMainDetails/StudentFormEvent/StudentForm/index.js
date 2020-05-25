@@ -52,7 +52,7 @@ const StudentDetails = props => {
                   onClick={() => setShowGraduate(!showGraduate)}
                   className={Classes.otherbutton}
                 >
-                  Change Class
+                  {!showGraduate ? "Change Class" : `${props.full_name} details`}
                 </div>
                 <div
                   onClick={() => setShowModal(true)}
@@ -73,8 +73,6 @@ const StudentDetails = props => {
                 show={showGraduate}
                 full_name={props.full_name}
                 eachId={props.childID}
-                update={props.update}
-                ChangedClassToTrue={props.ChangedClassToTrue}
                 setMessage={res => setMessage(res)}
               />
               {showGraduate ? null : (

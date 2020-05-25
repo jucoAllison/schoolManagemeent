@@ -9,8 +9,6 @@ const StudentDetails = props => {
     props.history.goBack();
   };
 
-  console.log(HomeCTX.clickedDetails)
-
   return (
     <>
       <Nav />
@@ -21,8 +19,6 @@ const StudentDetails = props => {
 
       <StudentMainDetails
         eachId={HomeCTX.clickedDetails._id}
-        update={props.update}
-        ChangedClassToTrue={props.ChangedClassToTrue}
       />
     </>
   );

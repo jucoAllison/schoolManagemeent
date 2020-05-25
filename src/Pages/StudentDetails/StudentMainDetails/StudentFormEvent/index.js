@@ -164,9 +164,7 @@ const Index = props => {
   return (
     <div>
       <StudentForm
-      ChangedClassToTrue={props.ChangedClassToTrue}
         childID={propsMatch}
-        update={props.update}
         err={err}
         loading={loading}
         getEachStudent={getEachStudent}

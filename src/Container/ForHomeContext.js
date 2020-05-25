@@ -7,7 +7,8 @@ class ForHomeContext extends React.Component {
     clickedHandler: { student: false, message: false, class: false },
     selectingClassClasses: null,
     selectingClassStudents: null,
-    clickedDetails: null
+    clickedDetails: null,
+    deletingStudent: null,
   };
 
   setClickedHandler = payload => this.setState({ clickedHandler: payload });
@@ -23,9 +24,9 @@ class ForHomeContext extends React.Component {
       }
   }
 
-  setClickedDetails = payload => {
-    this.setState({clickedDetails: { _id: payload._id, full_name: payload.full_name, sex: payload.sex }})
-  }
+  setClickedDetails = payload => this.setState({clickedDetails: { _id: payload._id, full_name: payload.full_name, sex: payload.sex }});
+
+  setDeletingStudent= payload =>  this.setState({deletingStudent: {_id: payload._id, name: payload.name}});
 
   render() {
     return (
@@ -37,7 +38,9 @@ class ForHomeContext extends React.Component {
           selectingClassStudents: this.state.selectingClassStudents,
           setSelectingClass: this.setSelectingClass,
           clickedDetails: this.state.clickedDetails,
-          setClickedDetails: this.setClickedDetails
+          setClickedDetails: this.setClickedDetails,
+          deletingStudent: this.state.deletingStudent,
+          setDeletingStudent: this.setDeletingStudent,
         }}
       >
         <Route />

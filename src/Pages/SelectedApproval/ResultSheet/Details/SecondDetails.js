@@ -35,19 +35,20 @@ const SecondDetails = props => {
 
   // everthing about mapping out the subjects
   const SubMap = props.subjects.map(v => (
-    <div key={v._id}>
+
+    <div key={v.sub_id}>
       <div className={Classes.GridingSub}>
         <div className={Classes.mainSubject}>{v.sub_name}</div>
         <div>
           <div className={Classes.Scores}>
             <h5>Test</h5>
-            <input type="text" value={v.scores.test} />
+            <input type="text" readOnly value={v.scores.test} />
             <h5>Ass.</h5>
-            <input type="text" value={v.scores.assignment} />
+            <input type="text" readOnly value={v.scores.assignment} />
             <h5>Mid-Term</h5>
-            <input type="text" value={v.scores.mid_term} />
+            <input type="text" readOnly value={v.scores.mid_term} />
             <h5>Exams</h5>
-            <input type="text" value={v.scores.exams} />
+            <input type="text" readOnly value={v.scores.exams} />
           </div>
         </div>
       </div>

@@ -76,6 +76,7 @@
   cursor: pointer;
   background-color: #fff;
   padding: 0.3em 0.7em;
+  text-transform: capitalize;
   border-radius: 5px;
 }
 .otherbutton:hover{
@@ -94,7 +95,8 @@
   display: flex;
   justify-content: center;
   margin: 0px auto 15px auto;
-  width: 250px;
+  width: 500px;
+  max-width: 80%;
   color: #fff;
   padding: 1em;
   margin-top: 10px;

@@ -11,4 +11,7 @@ export default React.createContext({
     // clicked student in the selecting class
     clickedDetails: null,
     setClickedDetails: () => {},
+    // fro deleting students
+    deletingStudent: null,
+    setDeletingStudent : () => {}
 })

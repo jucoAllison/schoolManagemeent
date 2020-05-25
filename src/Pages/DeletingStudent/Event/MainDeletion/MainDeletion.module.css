@@ -1,0 +1,19 @@
+.Griding {
+  width: 700px;
+  max-width: 89%;
+  background-color: #ffffff;
+  padding: 1em;
+  margin: 30px auto 30px auto;
+  border-radius: 7px;
+  box-shadow: 0 0.4px 4px #76848d;
+}
+.Griding:hover {
+  box-shadow: 0 0.4px 10px #76848d;
+}
+
+.message {
+    background-color: inherit;
+    font-weight: bold;
+    text-align: center;
+  }
+  

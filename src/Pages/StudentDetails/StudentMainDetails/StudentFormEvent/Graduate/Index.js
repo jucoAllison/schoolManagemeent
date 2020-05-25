@@ -44,12 +44,7 @@ const Index = props => {
       .then(res => {
         setLoading(false);
         setShowModal(false);
-        if (res.Message.split("")[0] === props.full_name.split("")[0]) {
-          props.setMessage(res.Message);
-        } else {
-          props.ChangedClassToTrue();
-          props.update();
-        }
+        props.setMessage(res.Message);
       })
       .catch(err => {
         setShowModal(false);
