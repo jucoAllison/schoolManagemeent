@@ -6,11 +6,56 @@
   margin: 30px auto 30px auto;
   border-radius: 7px;
   box-shadow: 0 0.4px 4px #76848d;
+  box-sizing: border-box;
 }
 .Griding:hover {
   box-shadow: 0 0.4px 10px #76848d;
 }
 
+
+.DeletingContainer{
+  margin-top: 20px;
+  background-color: inherit;
+  box-sizing: border-box;
+  padding: 1em;
+  border-radius: 3px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.DeletingContainer:hover {
+  box-shadow: 0 0.3px 8px #76848d;
+}
+.ListResult{
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.identifier{
+  display: flex;
+  background-color: inherit;
+  margin-bottom: 0.2em
+}
+.identifier h5{
+margin-right: 0.5em;
+background-color: inherit;
+color: #76848d;
+}
+.identifier div{
+  color: #188dfc;
+  background-color: inherit;
+}
+
+.Trash{
+  display: none;
+  background-color: inherit;
+
+}
+.DeletingContainer:hover .Trash{
+  display: block;
+}
 .message {
     background-color: inherit;
     font-weight: bold;

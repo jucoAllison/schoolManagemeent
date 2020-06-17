@@ -14,6 +14,7 @@ const Index = props => {
   });
   const [childDetails, setChildDetails] = React.useState({
     full_name: "",
+    freeze: false,
     state_of_origin: "",
     lga: "",
     age: "",
@@ -173,6 +174,7 @@ const Index = props => {
         onChange={onChangeInput.bind(this)}
         // value
         full_name={childDetails.full_name == null ? "" : childDetails.full_name}
+        freeze={childDetails.freeze}
         state_of_origin={
           childDetails.state_of_origin == null
             ? ""

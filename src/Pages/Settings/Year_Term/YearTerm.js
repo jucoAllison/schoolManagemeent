@@ -30,7 +30,7 @@ const YearTerm = props => {
             >
               <label htmlFor="Passion_Year">YEAR</label>
               <input
-                autoComplete={false}
+                autoComplete
                 name="Passion_Year"
                 required
                 type="number"

@@ -19,6 +19,7 @@ import MasterSheet from '../../Pages/MasterSheeet/MasterSheeet';
 import MainMasterSheet from  '../../Pages/MainMasterSheet/EventMainMaster'
 import StudentDetails from  '../../Pages/StudentDetails/StudentDetails'
 import DeletingStudent from "../../Pages/DeletingStudent/DeletingStudent"
+import Record from "../../Pages/Record/Record"
 
 const Routing = props => {
     const CTX = React.useContext(Context);
@@ -42,6 +43,7 @@ const Routing = props => {
             {CTX.token && <Route path="/download=>_masterSheet" exact  component={MainMasterSheet} /> }
             {CTX.token && <Route path="/get=>_studentFullDetails" exact component={StudentDetails} /> }
             {CTX.token && <Route path="/deleting_students" exact component={DeletingStudent} /> }
+            {CTX.token && <Route path="/Record_for_=>_/:fullname" exact component={Record} /> }
             {CTX.token && <Route path="*" exact component={Login} /> }
             {!CTX.token && <Route path="/login" render={() => <Login />} />}
             {!CTX.token && <Redirect from="/" to="/login" /> }

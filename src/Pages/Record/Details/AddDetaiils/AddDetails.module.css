@@ -1,0 +1,41 @@
+.AddDetails {
+  width: 150px;
+  margin: auto;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  background-color: inherit;
+  cursor: pointer;
+  color: #e72626;
+}
+.GridStatementOfAccount {
+  font-weight: bold;
+  display: grid;
+  color: #454f51;
+  font-size: 13px;
+  width: 100%;
+  grid-template-columns: 2fr 3fr 3fr 1fr 1fr 1fr;
+  background-color: inherit;
+  margin-top: 20px;
+}
+.GridStatementOfAccount input {
+  text-transform: capitalize;
+  background-color: inherit;
+  width: 93%;
+  color: #76848d;
+  font-size: 12px;
+}
+.GridStatementOfAccount button {
+  background-color: #76848d;
+  width: 100%;
+  color: #ffffff;
+  font-size: 12px;
+  border: none;
+  outline: none;
+}
+
+.GridStatementOfAccount button:hover {
+  background-color: #fff;
+  color: #76848d;
+  border: .7px solid #76848d; 
+}

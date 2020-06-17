@@ -3,10 +3,8 @@ import Classes from "./EachClass.module.css";
 // components
 import Subjects from "./Subjects/Subjects";
 import Performance from "./Performance/Performance";
-import HomeContext from "../../../../../Component/Context/HomeContext";
 
 const EachClass = props => {
-  const HomeCTX = React.useContext(HomeContext);
 
   return (
     <div className={Classes.BG}>

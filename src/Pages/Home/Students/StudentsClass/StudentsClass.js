@@ -33,6 +33,7 @@ const StudentsClass = props => {
           className={props.className}
           total={props.total}
           StudentNames={props.StudentNames}
+          getEachClassStudent={props.getEachClassStudent}
         />
       )}
     </div>

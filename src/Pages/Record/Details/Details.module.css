@@ -1,0 +1,104 @@
+.background {
+  width: 700px;
+  max-width: 89%;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding: 1em;
+  margin: 30px auto 30px auto;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 0.4px 4px #76848d;
+}
+.background:hover {
+  box-shadow: 0 0.4px 10px #76848d;
+}
+.HAndleScroll{
+  background-color: inherit;
+  overflow: hidden;
+  width: 96%;
+
+  box-sizing: border-box;
+}
+.GridStatementOfAccount {
+  font-weight: bold;
+  display: grid;
+  color: #76848d;
+  font-size: 11px;
+  width: 96%;
+  background-color: inherit;
+  margin: 5px auto;
+  padding: 0.1em;
+  box-sizing: border-box;
+  grid-template-columns: 2fr 3fr 3fr 1fr 1fr;
+  height: 30px;
+  overflow: hidden;
+  align-items: center;
+}
+.coverRef {
+  border: 0.7px solid #454f51;
+  background-color: inherit;
+}
+.ReadONly {
+  background-color: inherit;
+  background-color: inherit;
+  width: 99%;
+  color: #76848d;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.NOReadONly {
+  text-transform: capitalize;
+  background-color: inherit;
+  padding: 0.2em 0em 0.2em 0.1em;
+  width: 99%;
+  color: #76848d;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+.FlexTerm {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  background-color: inherit;
+}
+.FlexTerm div {
+  background-color: inherit;
+  color: #454f51;
+}
+.Conttain {
+  color: #ffffff;
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 11px;
+  width: 100%;
+  background-color: inherit;
+  margin-top: 10px;
+}
+.Scroll {
+  background-color: inherit;
+}
+
+.message {
+  background-color: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+.header {
+  font-size: 12px;
+  color: #454f51;
+  margin-bottom: 20px;
+  background-color: inherit;
+}
+
+@media (max-width: 660px) {
+  .HAndleScroll {
+    width: 500px;
+  }
+
+  .Scroll {
+    overflow-x: scroll;
+  }
+}

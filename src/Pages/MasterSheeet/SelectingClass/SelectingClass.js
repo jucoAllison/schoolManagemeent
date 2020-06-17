@@ -131,8 +131,6 @@ const SelectingClasss = () => {
       );
     });
 
-  console.log(MasterCTX);
-
   return (
     <div onClick={getAvialbleYear} style={{ backgroundColor: "#fff" }}>
       <SelectingClass onClick={setGetClassHandler.bind(this)} lable={MasterCTX.classDetails === null ? "Click Here" : MasterCTX.classDetails[0].ClassName} />

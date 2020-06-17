@@ -14,11 +14,11 @@ const StudentDetails = props => {
       <Nav />
       <GoBack Goback={GobackHandler} />
       <div style={{ textAlign: "center", margin: "40px 0px", color: "#000", textTransform: "capitalize" }}>
-        Full Details of {HomeCTX.clickedDetails.full_name}
+        Full Details of {HomeCTX.clickedDetails === null ? "" : HomeCTX.clickedDetails.full_name}
       </div>
 
       <StudentMainDetails
-        eachId={HomeCTX.clickedDetails._id}
+        eachId={HomeCTX.clickedDetails === null ? "vgfd" : HomeCTX.clickedDetails._id}
       />
     </>
   );

@@ -11,12 +11,11 @@ import { ReactComponent as Retry } from "../../../../../Assert/retry.svg";
 import HomeContext from "../../../../../Component/Context/HomeContext";
 
 const StudentList = props => {
-  const HomeCTX = React.useContext(HomeContext)
+  const HomeCTX = React.useContext(HomeContext);
   // this hook shows the details and it is off with React.useEffect
   const details = (_id, full_name, sex, e) => {
-    HomeCTX.setClickedDetails({ _id, full_name, sex })
+    HomeCTX.setClickedDetails({ _id, full_name, sex });
   };
-
 
   // Value on the FILTER
   const [filter, setFilter] = React.useState("");
@@ -32,35 +31,40 @@ const StudentList = props => {
   }).map(v => {
     return (
       <Link
-      key={v._id}
+        key={v._id}
         to="/get=>_studentFullDetails"
-        style={{ color: "none", textDecoration: "none", backgroundColor: "inherit" }}
+        style={{
+          color: "none",
+          textDecoration: "none",
+          backgroundColor: "inherit"
+        }}
       >
         <li
           style={{ backgroundColor: "#fff" }}
           onClick={details.bind(this, v._id, v.full_name, v.sex)}
           className={Classes.LISTLI}
+          style={{ border: v.freeze ? "1px solid #e72626" : null }}
         >
           {v.sex == "male" || v.sex == "Male" ? (
             <Boy
               style={{ backgroundColor: "inherit" }}
               width="20"
               height="20"
-              fill="#198dfb"
+              fill={v.freeze ? "#e72626" : "#198dfb"}
             />
           ) : v.sex == "Female" || v.sex == "female" ? (
             <Girl
               style={{ backgroundColor: "inherit" }}
               width="20"
               height="20"
-              fill="#198dfb"
+              fill={v.freeze ? "#e72626" : "#198dfb"}
             />
           ) : (
             <Who
               style={{ backgroundColor: "inherit" }}
               width="17"
               height="17"
-              fill="#198dfb"
+              fill={v.freeze ? "#e72626" : "#198dfb"}
             />
           )}
           <span
@@ -100,7 +104,6 @@ const StudentList = props => {
   return (
     <div className={Classes.BgColor}>
       <div className={Classes.Griding}>
-        
         {props.loading ? (
           <Loading />
         ) : (

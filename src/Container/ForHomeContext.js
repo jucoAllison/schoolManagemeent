@@ -1,6 +1,7 @@
 import React from "react";
 import Route from "../Component/Route/Route";
 import HomeContext from "../Component/Context/HomeContext";
+import RecordContext from "../Component/Context/record";
 
 class ForHomeContext extends React.Component {
   state = {
@@ -9,6 +10,7 @@ class ForHomeContext extends React.Component {
     selectingClassStudents: null,
     clickedDetails: null,
     deletingStudent: null,
+    accountRecordID: null,
   };
 
   setClickedHandler = payload => this.setState({ clickedHandler: payload });
@@ -28,6 +30,8 @@ class ForHomeContext extends React.Component {
 
   setDeletingStudent= payload =>  this.setState({deletingStudent: {_id: payload._id, name: payload.name}});
 
+  setAccountRecordID = payload => this.setState({accountRecordID: payload.ID})
+
   render() {
     return (
       <HomeContext.Provider
@@ -43,7 +47,13 @@ class ForHomeContext extends React.Component {
           setDeletingStudent: this.setDeletingStudent,
         }}
       >
+        {/* for record account */}
+        <RecordContext.Provider value={{
+          accountRecordID: this.state.accountRecordID,
+          setAccountRecordID: this.setAccountRecordID
+        }}>
         <Route />
+        </RecordContext.Provider>
       </HomeContext.Provider>
     );
   }

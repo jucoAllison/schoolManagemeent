@@ -42,15 +42,15 @@ const Delete = props => {
           <div className={Classes.BUTTON}>
             <h5 onClick={props.closeShowModal}>No</h5>
             <Link
+              onClick={deleteStudent.bind(
+                this,
+                props.studentID,
+                props.full_name
+              )}
               style={{ textDecoration: "none", color: "inherit" }}
               to="/deleting_students"
             >
               <h5
-                onClick={deleteStudent.bind(
-                  this,
-                  props.studentID,
-                  props.full_name
-                )}
               >
                 Yes
               </h5>

@@ -70,6 +70,7 @@ const Students = () => {
         total={total}
         className={className}
         StudentNames={StudentNames}
+        getEachClassStudent={GEtAllStudentInThisClass}
       />
     </div>
   );

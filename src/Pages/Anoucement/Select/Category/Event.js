@@ -34,19 +34,30 @@ const Event = props => {
           const notify = res.result.map(v => {
             return v.phone;
           });
+          console.log(notify)
           setContacts(notify);
           setShow(true);
         } else  {
           const notify_phone = res.result.map(v => {
-            return v.phone;
+            if(v.freeze){
+              return
+            }else{
+              return v.phone;
+            }
           });
           const notify_emergency_phone = res.result.map(v => {
-            return v.emergency_phone;
+            if(v.freeze){
+              return
+            }else{
+              return v.emergency_phone;
+            }
           });
           const Add = [...notify_phone, ...notify_emergency_phone];
+          console.log(Add)
           let removeUndefined = Add.filter(v => {
             return v !== undefined
           })
+
           setShow(true);
           setContacts(removeUndefined)
         }

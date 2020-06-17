@@ -108,6 +108,31 @@
   margin-top: 20px;
 }
 
+.Sidedrawer{
+  position: absolute;
+  z-index: 200;
+  padding: 1em;
+  box-sizing: border-box;
+  background-color: #454f51;
+  font-weight: bold;
+  width: 200px;
+  height: 200px;
+  transition: all 1s ease-out;
+}
+.TOleft{
+  background-color: inherit;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.Link{
+  font-size: 12px;
+  padding: .7em;
+  cursor: pointer;
+  border-bottom: .8px solid #71cff5;
+  background-color: #454f51;
+  color: #fff;
+}
+
 @media(max-width: 804px){
   .grid3 {
     grid-template-columns: 1fr;

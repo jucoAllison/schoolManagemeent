@@ -1,33 +1,49 @@
-.yes{
-    background-color: inherit;
-    font-size: 12px;
+.yes {
+  background-color: inherit;
+  font-size: 12px;
 }
 
 .Delete {
-    margin-bottom: 10px;
-  }
-  .Delete h4 {
-    background-color: #fff;
-    text-align: center;
-  }
-  .BUTTON {
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-  }
-  .BUTTON h5 {
-    padding: 0.8em;
-    background-color: #198dfb;
-    color: #fff;
-    cursor: pointer;
-  }
-  .BUTTON h5:last-child {
-    background-color: #e72626;
-  }
-  .Yes {
-    text-align: center;
-    color: red;
-    margin-bottom: 40px;
-    cursor: pointer;
-  }
-  
+  margin-bottom: 10px;
+}
+.Delete h4 {
+  background-color: #fff;
+  text-align: center;
+}
+.BUTTON {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.BUTTON h5 {
+  padding: 0.8em;
+  background-color: #198dfb;
+  color: #fff;
+  cursor: pointer;
+}
+.BUTTON h5:last-child {
+  background-color: #e72626;
+}
+.Yes {
+  text-align: center;
+  color: red;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.message {
+  background-color: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+.CreateBTN{
+  width: 120px;
+  padding: .8em .2em;
+  text-align: center;
+  margin: 9px auto 0px auto;
+  display: flex;
+  justify-content: center;
+  background-color: #198dfb;
+  color: #fff;
+  font-size: 11px
+}
